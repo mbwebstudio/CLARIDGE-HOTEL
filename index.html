@@ -19,6 +19,7 @@ a{color:inherit}
 :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
 h1,h2,h3{font-family:var(--display);font-weight:var(--dw);line-height:1.08;letter-spacing:var(--tr)}
 .wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+body>div{overflow-x:clip}
 svg.i{width:20px;height:20px;flex:none}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:var(--br);font-weight:700;text-decoration:none;transition:transform .15s,background .15s}
 .btn:hover{transform:translateY(-2px)}
@@ -60,8 +61,8 @@ svg.i{width:20px;height:20px;flex:none}
 .lt section{padding:84px clamp(20px,5vw,72px)}
 .lt .in{max-width:900px}
 .lt-hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:40px;align-items:center;min-height:min(82vh,760px);border-bottom:1px solid var(--line)}
-.lt-hero h1{overflow-wrap:break-word}
-.lt-hero h1{font-size:clamp(2.6rem,6vw,var(--h1));margin:16px 0 22px}
+.lt-hero h1{hyphens:manual}
+.lt-hero h1{font-size:clamp(2.2rem,3.9vw,var(--h1));margin:16px 0 22px}
 .lt-hero .lead{color:var(--muted);font-size:1.15rem;max-width:44ch;margin-bottom:28px}
 .lt-hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
 .lt h2{font-size:clamp(1.9rem,3.8vw,2.7rem);margin-bottom:12px}
